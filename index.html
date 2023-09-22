@@ -1,109 +1,591 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Próximamente</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="utf-8">
+  <title>Money turned</title>
+  <meta name="keywords" content="HTML5 Template">
+  <meta name="description" content="">
+  <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        /* Fondo dividido en dos colores de forma estilizada */
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: relative;
-        }
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/simbolo.png">
+  
+  <!-- Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900" rel="stylesheet">
 
-        .container::before, .container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 50%;
-            z-index: -1;
-        }
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="css/style.css">
 
-        .container::before {
-            left: 0;
-            background-color: #ffffff;
-            border-bottom-right-radius: 50%;
-        }
-
-        .container::after {
-            right: 0;
-            background-color: #8AE0B5;
-            border-bottom-left-radius: 50%;
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #333;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            font-family: 'Visby CF Family', sans-serif;
-            animation: scaleUp 1s ease-in-out infinite alternate;
-        }
-
-        @keyframes scaleUp {
-            0% {
-                transform: scale(1);
-            }
-            100% {
-                transform: scale(1.05);
-            }
-        }
-
-        p {
-            font-size: 1.5em;
-            color: #666;
-            margin-bottom: 20px;
-            font-family: 'Visby CF Family', sans-serif;
-        }
-
-        .countdown {
-            font-size: 2em;
-            color: #ff5733;
-            margin-bottom: 30px;
-        }
-
-        /* Estilos para la imagen en la esquina superior izquierda */
-        .corner-image {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 100px; /* Ajusta el tamaño de la imagen */
-            height: auto;
-        }
-    </style>
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
-<body>
-    <div class="container">
-        <h1>Próximamente</h1>
-        <p>¡La revolución en servicios financieros te espera!</p>
 
-        <div class="countdown" id="countdown">
- 
-        </div>
-        <div class="social-icons">
-            <a href="#" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#" target="_blank"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#" target="_blank"><img src="instagram.png" alt="Instagram"></a>
-        </div>
-        <img src="icono.png" alt="Imagen Ejemplo" class="corner-image"> <!-- Ruta de ejemplo para la imagen -->
+<body class="dark">
+
+<div class="preloader"><span></span></div><!-- .preloader -->
+
+<div class="background">
+  <div class="layer background-image page-bg-2"></div>
+  
+  <div class="layer background-overlay page-overlay-2"></div>
+</div><!-- .background -->
+
+<header class="site-header">
+  <div class="row header-wrap">
+		<div class="col-sm-5 header-box">
+			<div id="main-menu" class="main-menu">
+				<ul>
+					
+				</ul>
+			</div>
+		</div><!-- .header-box -->
+		
+		<div class="col-sm-2 header-box logo-box text-center">
+			<a href="index.html"><img src="img/logo2.png" width="150" alt="#"></a>
+		</div><!-- .header-box -->
+		
+		<div class="col-sm-5 header-box text-right hidden-xs">
+			<!-- demonstration - //keith-wood.name/countdownRef.html -->
+			<div class="countdown-box">
+				<div class="countdown" data-date="2023, 10, 05	"></div>
+			</div>
+		</div><!-- .header-box -->
+  </div>
+</header><!-- .site-header -->
+
+<div class="main">
+  <section id="home" class="section active">
+		<div class="section-wrap">
+			<div class="section-content">
+				<div class="container">
+					<div class="text-center">
+						<div class="clearfix"></div>
+						<h1 class="h1-section-title"
+							data-animation="fadeInDown"
+							data-out-animation="fadeOutUp"
+							data-out-animation-delay="300" style="font-size: 25px;">Money turned</h1>
+
+						
+						<div class="row section-description">
+							<div class="col-sm-8 col-sm-offset-2">
+								<p class="lead text-coming"
+									data-animation="fadeInDown"
+									data-animation-delay="300"
+									data-out-animation="fadeOutUp"
+									data-out-animation-delay="300">¡La revolución en servicios financieros te espera!</p>
+								<p class="text-coming">Estamos a punto de desvelar una plataforma que cambiará tu manera de interactuar
+									con las criptomonedas, las remesas y mucho más.</p>
+
+								<!--<p class="d-block text-coming">Transacciones P2P rápidas y seguras.</p>
+								<p class="d-block text-coming">Envía y recibe dinero a nivel internacional con la confianza que te mereces.</p>
+							    <p class="d-block text-coming">Conexiones con las principales plataformas de exchange.</p>-->
+								<p class="d-block text-coming">¡Y muchas sorpresas más que estamos ansiosos por compartir contigo!</p>
+							    <p class="d-block text-coming">¡Mantente atento! Pronto podrás descubrir todo lo que MonevTurned tiene para ofrecer.</p>
+							</div>
+						</div>
+						
+						
+					</div>
+				</div>
+			</div><!-- .section-content -->
+		</div><!-- .section-wrap -->
+  </section><!-- #home.section -->
+  
+  
+
+<footer class="site-footer">
+	<div style="width: 100%; text-align: center; margin-bottom: 20px;">
+		<a class="botones-foot" href="#" style="margin:0px 10px"
+			data-animation="fadeInDown"
+			data-animation-delay="600"
+			data-out-animation="fadeOutUp"
+			data-out-animation-delay="600"
+			data-toggle="modal"
+			data-target="#notify-my"><span class="button-label">Divulgación de riesgos</span>
+		</a>
+		<a class="botones-foot" href="#" style="margin:0px 10px"
+			data-animation="fadeInDown"
+			data-animation-delay="600"
+			data-out-animation="fadeOutUp"
+			data-out-animation-delay="600"
+			data-toggle="modal"
+			data-target="#politica-privacidad"><span class="button-label">Política de privacidad </span>
+		</a>
+		<a class="botones-foot" href="#" style="margin:0px 10px"
+			data-animation="fadeInDown"
+			data-animation-delay="600"
+			data-out-animation="fadeOutUp"
+			data-out-animation-delay="600"
+			data-toggle="modal"
+			data-target="#politica-contralavado"><span class="button-label">Políticas AML/KYC</span>
+		</a>
+		<a class="botones-foot" href="#" style="margin:0px 10px"
+			data-animation="fadeInDown"
+			data-animation-delay="600"
+			data-out-animation="fadeOutUp"
+			data-out-animation-delay="600"
+			data-toggle="modal"
+			data-target="#terminos-uso"><span class="button-label">Términos de Uso</span>
+		</a>
     </div>
-    
-    <script>
-        // Configura la fecha de lanzamiento (año, mes [0-11], día, hora, minuto, segundo)
-        const launchDate = new Date(2023, 0, 1, 12, 0, 0).getTime();
-    </script>
+  <div class="container-fluid text-center">
+		<div class="copyright" style="color: white;">¡Síguenos en nuestras redes sociales y no te pierdas ningún detalle!</div>
+		<div class="social">
+			<a href="https://www.facebook.com/moneyturned/" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://instagram.com/moneyturned/" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://twitter.com/moneyturned/" target="_blank"><i class="fa fa-twitter"></i></a>
+		</div>
+  </div>
+</footer><!-- .site-footer -->
+
+<div class="modal fade text-center notify-my" id="notify-my" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" style="width: 100%;height: 100%;max-width: inherit;margin: 0px!important;">
+		<div class="modal-content" style="height: 100%; overflow: scroll;">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+			</div>
+			
+			<div class="modal-body">
+				<p class="" style="font-size:20px;">Divulgación de Riesgos</p>
+				Al utilizar los servicios de MoneyTurned, usted reconoce y acepta los siguientes riesgos:
+
+				1. **Naturaleza Volátil de las Criptomonedas**: El valor de las criptomonedas puede ser altamente volátil. El precio puede aumentar o disminuir en cortos periodos de tiempo, lo que puede resultar en pérdidas significativas. Antes de realizar cualquier operación, es esencial informarse y considerar su tolerancia al riesgo.
+
+				2. **Seguridad Cibernética**: A pesar de que MoneyTurned emplea medidas avanzadas de seguridad para proteger los fondos y datos de los usuarios, siempre existe un riesgo inherente de ataques cibernéticos. Es esencial que los usuarios también tomen precauciones al resguardar sus datos y activos.
+
+				3. **Operaciones P2P**: Al realizar operaciones peer-to-peer, está interactuando directamente con otro usuario. Aunque MoneyTurned actúa como usuario verificado en diversas plataformas, no podemos garantizar la conducta de todos los usuarios con los que pueda interactuar.
+
+				4. **Regulaciones y Cambios Legislativos**: Las leyes y regulaciones relacionadas con las criptomonedas pueden cambiar y varían según el país. Es responsabilidad del usuario estar informado y cumplir con todas las regulaciones aplicables en su jurisdicción.
+
+				5. **Accesibilidad**: Las operaciones en línea dependen de diversos factores como la conectividad a internet y la infraestructura tecnológica. Aunque MoneyTurned se esfuerza por ofrecer un servicio ininterrumpido, no podemos garantizar un acceso constante y sin interrupciones a nuestros servicios.
+
+				6. **Decisiones Financieras**: Las decisiones relacionadas con la compra, venta, transferencia o custodia de criptomonedas son responsabilidad exclusiva del usuario. Es esencial informarse y, si es necesario, buscar asesoramiento financiero antes de tomar cualquier decisión.
+
+				Al utilizar MoneyTurned, usted acepta responsabilizarse de estos riesgos y exonera a MoneyTurned de cualquier responsabilidad relacionada con pérdidas financieras o de otro tipo que puedan surgir debido a estos riesgos.
+			</div>
+		</div>
+  </div>
+</div>
+
+<div class="modal fade text-center notify-my politica-privacidad" id="politica-privacidad" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" style="width: 100%;height: 100%;max-width: inherit;margin: 0px!important;">
+		  <div class="modal-content" style="height: 100%; overflow: scroll;">
+			  <div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+			  </div>
+			  
+			  <div class="modal-body">
+				  <p class="" style="font-size:20px;">Política de Privacidad de MoneyTurned</p>
+				  
+
+				**1. Introducción**
+
+				Bienvenido a MoneyTurned. Respetamos tu privacidad y estamos comprometidos a protegerla. Esta política de privacidad establece cómo tratamos y protegemos tu información personal cuando usas nuestros servicios.
+
+				**2. Datos que recopilamos**
+
+				- **Información de registro:** Datos que nos proporcionas al crear una cuenta, como nombre, dirección de correo electrónico, dirección postal, número de teléfono y otros datos de contacto.
+
+				- **Información financiera:** Detalles relacionados con tus transacciones, métodos de pago y otros datos necesarios para procesar esas transacciones.
+
+				- **Datos técnicos:** Información sobre tu dispositivo, dirección IP, y cómo interactúas con nuestros servicios.
+
+				- **Datos de comunicación:** Información sobre tus preferencias de comunicación, feedback, y correspondencia con nuestro equipo.
+
+				**3. Uso de la información**
+
+				Utilizamos la información recopilada para:
+
+				- Proporcionarte y personalizar nuestros servicios.
+				- Procesar transacciones y enviar notificaciones.
+				- Resolver problemas y responder a tus solicitudes.
+				- Realizar análisis y estudios para mejorar nuestro servicio.
+				- Cumplir con obligaciones legales y regulaciones.
+
+				**4. Compartir y divulgar información**
+
+				Tu privacidad es crucial para nosotros, y no vendemos ni alquilamos tu información. Sin embargo, es posible que compartamos tu información en las siguientes circunstancias:
+
+				- Con proveedores y socios que nos ayudan a operar y mejorar nuestros servicios.
+				- Para cumplir con requisitos legales o en respuesta a procesos legales.
+				- Para proteger los derechos y propiedades de MoneyTurned y de otros, incluida la prevención del fraude.
+				- Con tu consentimiento o a tu solicitud.
+
+				**5. Seguridad de la información**
+
+				Hemos implementado medidas técnicas y organizativas diseñadas para proteger tu información de pérdidas accidentales, accesos, usos, alteraciones o divulgaciones no autorizados.
+
+				**6. Tus derechos**
+
+				Como usuario de MoneyTurned, tienes derechos relacionados con tus datos personales:
+
+				- Acceso: Puedes solicitarnos detalles sobre tu información que tenemos.
+				- Rectificación: Si crees que cualquier dato es incorrecto o incompleto, puedes solicitarnos corregirlo.
+				- Eliminación: Puedes solicitarnos borrar tus datos personales.
+				- Oposición: Puedes oponerte al procesamiento de tus datos en ciertas circunstancias.
+				- Retirar consentimiento: Si nos has dado consentimiento para tratar tus datos, puedes retirarlo en cualquier momento.
+
+				**7. Cambios en la política**
+
+				Podemos modificar esta política de privacidad periódicamente para reflejar cambios en nuestras prácticas o por motivos legales. Te notificaremos sobre cualquier cambio importante.
+
+				**8. Contacto**
+
+				Para cualquier inquietud o pregunta sobre esta política, contáctanos a Info@moneyturned.com
+
+			  </div>
+		  </div>
+	</div>
+</div>
+
+<div class="modal fade text-center notify-my politica-contralavado" id="politica-contralavado" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" style="width: 100%;height: 100%;max-width: inherit;margin: 0px!important;">
+		  <div class="modal-content" style="height: 100%; overflow: scroll;">
+			  <div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+			  </div>
+			  
+			  <div class="modal-body">
+				  <p class="" style="font-size:20px;">Política contra el lavado de dinero/contra el financiamiento del terrorismo (AML/CFT)
+					MoneyTurned LTDA
+					01 febrero 2023</p>
+				  
+				  Artículo 1 
+				  
+				  Objeto y fundamento. En vista del hecho de que el lavado de dinero socavará el desarrollo del comercio de activos digitales, facilitará y generará corrupción, contaminará la moralidad social, dañará los derechos e intereses legítimos de los Usuarios, destruirá la base para el buen funcionamiento de las Plataformas de comercio de activos digitales, aumentará la riesgos legales y operativos de las Plataformas de comercio de activos digitales, Money Turned formula estas Reglas de acuerdo con el Acuerdo de usuario del sitio web de Money Turned, el Acuerdo de usuario de Money Turned y otra documentación relevante, a fin de prevenir el lavado de dinero y el financiamiento del terrorismo y completamente Cumplir con la normativa pertinente contra el blanqueo de capitales y la financiación del terrorismo. Por la naturaleza misma de sus negocios, Money Turned tendrá una cartera de clientes en todo el mundo. Esta presencia internacional puede generar consultas o solicitudes de información de otras autoridades policiales. Por lo tanto, Money Turned cumplirá con las diferentes leyes y requisitos legales impuestos por las autoridades de Brasil. Estas reglas describen los procedimientos a seguir para prevenir el lavado de dinero, el financiamiento del terrorismo y la corrupción. Money Turned no desea ser manipulado por lavadores de dinero o terroristas ni asociarse con el lavado de dinero o el terrorismo en general. Su objetivo no es simplemente cumplir con sus obligaciones legales, sino minimizar de manera efectiva el riesgo de explotación por parte de los delincuentes. Así, las políticas contra el blanqueo de capitales, la financiación del terrorismo y la corrupción se basan en los más altos estándares requeridos.
+				  
+				  
+				  Artículo 2 
+				  
+				  Ámbito de Aplicación. Estas Reglas se aplicarán a todos los Usuarios que operen con Money Turner. Los Usuarios deberán implementar las disposiciones de estas Reglas de conformidad con las leyes y reglamentos contra el lavado de dinero y contra el financiamiento del terrorismo del país o región donde se encuentran y dentro del alcance prescrito por las leyes y reglamentos de la región o país donde Ellos están localizados. Cuando existan requisitos más estrictos en el país o región donde se encuentran los Usuarios, dichos requisitos prevalecerán. Estas reglas se rigen y se interpretarán de conformidad con las leyes de Brasil.
+				  
+				  Artículo 3 
+				  
+				  Lucha contra el Blanqueo de Capitales y la Financiación del Terrorismo. Se refiere a las actividades con respecto a las cuales se han adoptado medidas de conformidad con las leyes, normas y reglamentos pertinentes, con el fin de prevenir las actividades de lavado de dinero que realizan los delincuentes a través de la Plataforma con el fin de encubrir y ocultar la fuente y naturaleza de los productos y ganancias que tales infractores obtengan a través de delitos tales como los relacionados con estupefacientes, delincuencia organizada, terrorismo, contrabando, corrupción, cohecho, estafa financiera, incumplimiento de la regulación y el orden financiero, entre otros.
+				  
+				  Artículo 4 Normas y Reglamentos contra el Blanqueo de Capitales. Las reglas y regulaciones de Money Turned contra el lavado de dinero (incluido el financiamiento del terrorismo; lo mismo en lo sucesivo) incluyen estas Reglas, las secciones relativas al lavado de dinero en el Acuerdo de usuario Money Turned, Medidas para la gestión de Operaciones de Gran Suma
+				  
+				  Artículo 5 
+				  
+				  Principios Básicos de la Plataforma contra el Blanqueo de Capitales. 
+				  
+				  Money Turned monitorea los riesgos del Usuario de acuerdo con los siguientes principios:
+				  
+				  (1) El principio de exhaustividad. Money Turned tendrá en cuenta todo tipo de factores de riesgo sobre la base de los cuales los Usuarios pueden ser sospechosos de lavado de dinero y monitoreará los riesgos de todos los Usuarios de manera adecuada.
+				  (2) El principio de prudencia. Sobre la base de comprender completamente a los Usuarios, Money Turned mejorará su capacidad para autenticar las identidades de los Usuarios y monitorear los riesgos de los Usuarios de manera prudente.
+				  (3) El principio de sostenibilidad. Money Turned prestará la debida atención a los riesgos del Usuario y responderá a los riesgos sobre la base de las circunstancias reales y específicas de cada riesgo.
+				  (4) El principio de confidencialidad. La información de identidad del usuario, la información de la transacción y el nivel de riesgo de la Plataforma se mantendrán estrictamente confidenciales y no se proporcionarán a ninguna entidad o individuo a menos que lo exija la ley o las autoridades reguladoras.
+				  (5) El principio de gestión jerárquica. La Plataforma revisará periódicamente la información básica de los Usuarios de acuerdo al nivel de riesgo de cada Usuario. Y la revisión de Usuarios con mayor nivel de riesgo será más estricta que la de Usuarios con menor nivel de riesgo.
+				  
+				  Artículo 6 
+				  
+				  Órgano Responsable. Money Turned lleva a cabo operaciones contra el blanqueo de capitales a través de un grupo de orientación en materia de blanqueo de capitales y un equipo para el avance de la lucha contra el blanqueo de capitales, cada uno de los cuales estará formado por miembros de los departamentos de control de riesgos y cumplimiento.
+				  
+				  
+				  Artículo 7 
+				  
+				  Funciones del Órgano Responsable. El grupo de orientación en materia de blanqueo de capitales es responsable de planificar, orientar y coordinar los asuntos de blanqueo de capitales de Money Turned. Sus responsabilidades específicas incluyen lo siguiente:
+				  
+				  (1) revisar y aprobar las políticas de lavado de dinero, los planes de trabajo y los informes de trabajo de Money Turned;
+				  (2) promulgar y actualizar los principios rectores y normas de la Plataforma contra el lavado de activos;
+				  (3) revisar la estructura organizativa de Money Turned y sus empresas y la designación de responsabilidades contra el lavado de dinero;
+				  (4) diseñar y completar procedimientos para la inspección y control interno de las transacciones;
+				  (5) estudiar problemas importantes y difíciles relacionados con el lavado de dinero y encontrar soluciones.
+				  La estructura de personal del equipo para avanzar en la lucha contra el lavado de dinero se determinará sobre la base de los requisitos reglamentarios y las condiciones específicas del lugar. Las principales responsabilidades del mismo incluyen:
+				  
+				  1) implementar las normas pertinentes contra el lavado de dinero y los planes del grupo de orientación para asuntos de lavado de dinero;
+				  (2) para implementar varias asignaciones;
+				  (3) para analizar e identificar la identidad y los antecedentes de cualquier Usuario con una transacción sospechosa, así como cada transacción sospechosa;
+				  (4) para evaluar y ajustar el nivel de riesgo de los Usuarios;
+				  (5) realizar la debida diligencia y supervisión continua de los Usuarios;
+				  (6) revisar y examinar regularmente las transacciones que hayan ocurrido;
+				  (7) reportar transacciones sospechosas a las autoridades competentes;
+				  (8) ayudar en la investigación a petición de cualquier autoridad competente.
+				  
+				  
+				  Artículo 8 
+				  
+				  Diligencia Debida. Siguiendo los principios de diligencia y comprensión de sus Usuarios, MoneyTurned aplica la debida diligencia a todos los Usuarios. Para los Usuarios de alto riesgo, MoneyTurned tiene derecho a realizar una diligencia debida mejorada.
+				  
+				  
+				  
+				  Artículo 9 
+				  
+				  Documentos Presentados por Usuarios Individuales. Tal como lo requieren las leyes y reglamentos de diferentes jurisdicciones, la información que Money Turned recopila sobre Usuarios individuales de diferentes países o regiones puede variar. En principio, un Usuario individual está obligado a proporcionar la siguiente información y datos de conformidad con la normativa pertinente de MoneyTurned contra el blanqueo de capitales:
+				  (1) nombre personal;
+				  (2) domicilio;
+				  (3) fecha de nacimiento;
+				  (4) nacionalidad;
+				  (5) número de teléfono;
+				  (6) dirección de correo electrónico;
+				  (7) una foto del Usuario tomada dentro de los seis meses a partir de la fecha de registro en MoneyTurned
+				  
+				  
+				  (8) fotocopia de la cédula de identidad vigente o del pasaporte vigente del Usuario; y
+				  (9) otra información o documentos solicitados por Money Turned.
+				  
+				  
+				  
+				  Artículo 10 
+				  
+				  Documentos Presentados por Usuarios Institucionales. Tal como lo exigen las leyes y reglamentos de diferentes jurisdicciones, la información que Money Turned  recopila sobre los Usuarios institucionales de diferentes países o regiones puede variar. En principio, un Usuario institucional deberá remitir la siguiente información y datos de conformidad con la normativa de Money Turned en la materia contra el blanqueo de capitales:
+				  (1) nombre de la institución;
+				  (2) domicilio social de la institución;
+				  (3) información de contacto de la institución;
+				  (4) estatutos de la institución;
+				  (5) descripción de la estructura patrimonial y propiedad de la institución;
+				  (6) representante legal de la institución;
+				  (7) lugar de residencia del representante legal de la institución;
+				  (8) datos de contacto del representante legal de la institución;
+				  (9) la licencia comercial de la institución;
+				  (10) el consentimiento de la institución para abrir una cuenta con Money Turned;
+				  (11) carta de autorización de la institución;
+				  (12) copia de la Cédula de Identidad vigente o pasaporte vigente del representante legal de la institución; y
+				  (13) otra información o documentos que se proporcionarán a solicitud de MoneyTurned.
+				  
+				  Artículo 11 
+				  
+				  Idiomas de los Documentos Presentados. La Plataforma solo acepta documentos preparados en Ingles, Portugués, Español. Los usuarios que envíen documentos preparados en cualquier idioma que no sea Ingles, Portugués, Español.  deberán contratar a un traductor debidamente calificado para traducir dichos documentos al Ingles, Portugués, Español. y certificar debidamente ante notario la versión traducida de los mismos.
+				  
+				  Artículo 12 
+				  
+				  Presentación de Copias de Documentos. Cuando se presente una copia de un documento, la copia deberá cotejarse debidamente con el original de dicho documento. Se puede presentar una copia de un documento si la copia ha sido notariada y certificada como copia fiel y exacta del documento original. La certificación mencionada en esta Cláusula incluye, pero no se limita a, certificación de una embajada, certificación judicial, certificación de un magistrado local o certificación de un notario público.
+				  
+				  Artículo 13 
+				  
+				  Verificación basada en fotografías. Los usuarios deberán completar un procedimiento de verificación basado en fotografías según lo requiera MoneyTurned: el Usuario deberá tomarse una fotografía de sí mismo, que muestre al Usuario sosteniendo su documento de identidad y una declaración de que el Usuario operara con MoneyTurned según su libre albedrío. Si la fotografía del Usuario no es lo suficientemente clara o no cumple con los requisitos de MoneyTurned,  tendrá derecho a negarse a rechazar el registro del Usuario.
+				  
+				  Artículo 14 
+				  
+				  Identificación del Beneficiario y del Responsable. Money Turned tiene derecho a identificar al propietario real o beneficiario o al controlador de la cuenta de un Usuario. En el caso de registro de un Usuario institucional, el o los accionistas que posean más del 10% de las acciones de la institución deberán proporcionar los materiales pertinentes y someterse a la verificación de identidad de acuerdo con los requisitos de Money Turned.
+				  
+				  Artículo 15 
+				  
+				  Autenticación de Identidad por Tercero Encargado. Cuando un subsitio web de la Plataforma encomiende a una institución de terceros la autenticación de la identidad de un Usuario, la institución de terceros deberá cumplir con los siguientes requisitos:
+				  (1) la institución de terceros ha adoptado las medidas necesarias para la identificación del Usuario y el almacenamiento de la información de identidad de acuerdo con las leyes y reglamentos sobre lavado de dinero y las reglas y regulaciones relevantes de la Plataforma contra el lavado de dinero;
+				  (2) el suministro de información del Usuario por parte de la institución de terceros al sitio web secundario no está sujeto a ningún obstáculo legal o técnico;
+				  (3) cuando se dedica a la operación comercial, el subsitio puede obtener rápidamente la información del Usuario proporcionada por la institución de terceros y, si es necesario, obtener el certificado de identidad válido del Usuario, así como el original, fotocopia o fotografía copias de los documentos de identidad de la tercera institución.
+				  
+				  Artículo 16 
+				  
+				  Revisión de Documentos de Usuario. Money Turned verificará y registrará la información relevante enviada por los Usuarios de acuerdo con el sistema de identificación de Usuarios bajo las normas pertinentes de Money Turned contra el lavado de dinero. Si Money Turned tiene alguna duda sobre la información enviada por cualquier Usuario, tiene derecho a solicitar al Usuario que proporcione otros documentos o consultar con las autoridades o departamentos competentes pertinentes para su verificación.
+				  
+				  
+				  Artículo 17 
+				  
+				  Clasificación de los Niveles de Riesgo de los Usuarios. Money Turned  clasifica a los Usuarios en tres categorías, es decir, Usuarios de bajo riesgo, Usuarios de riesgo medio y Usuarios de alto riesgo según los materiales enviados por los Usuarios, y sobre la base de factores tales como la ubicación geográfica de los Usuarios, las industrias están involucradas, antecedentes de los accionistas de los Usuarios, si los hubiere, y si los Usuarios son figuras públicas destacadas, entre otros. La Plataforma se reserva el derecho de ajustar la calificación de los Usuarios.
+				  
+				  Artículo 18 
+				  
+				  Identificación de Usuarios de Alto Riesgo. Usuarios de alto riesgo se refiere a los Usuarios que comprenden cualquiera de los siguientes factores de alto riesgo y se identifican como Usuarios de alto riesgo después de una evaluación exhaustiva por parte de la Plataforma. Los usuarios de alto riesgo incluyen:
+				  (1) Usuarios que han estado sujetos o están actualmente bajo investigación criminal o administrativa, excluyendo Usuarios que están siendo investigados en relación con cualquier procedimiento civil o disputa de emergencia;
+				  (2) Usuarios que sean figuras públicas destacadas, o cuyos accionistas controlantes, controladores reales y/o beneficiarios reales sean figuras públicas destacadas;
+				  (3) Los usuarios que son de países o regiones de alto riesgo, o sus accionistas controladores, controladores reales y/o beneficiarios reales son de países o regiones de alto riesgo;
+				  (4) Usuarios identificados como Usuarios clave sospechosos de acuerdo con los procedimientos pertinentes de Money Turned;
+				  (5) Usuarios que se dedican a operaciones comerciales en industrias sujetas a un nivel relativamente alto de riesgos de lavado de dinero, como joyería, comercio de metales preciosos, cambio de divisas, corretaje de empeño, remisión de dinero, clubes nocturnos e industria armamentística, etc.;
+				  (6) Usuarios que realizan operaciones intensivas dentro de un cierto período de tiempo, lo que es gravemente inconsistente con la situación en los mercados de activos digitales; y
+				  (7) Usuarios que realizan operaciones inusuales.
+				  
+				  
+				  Artículo 19
+				  
+				  
+				  Identificación de Usuarios de Bajo Riesgo. Usuarios de bajo riesgo se refiere a aquellos Usuarios que se identifican como Usuarios de bajo riesgo después de una evaluación exhaustiva por parte de la Plataforma. Los factores de bajo riesgo incluyen:
+				  (1) Usuarios que sean instituciones financieras o empresas de renombre;
+				  (2) Usuarios que son personas físicas y de quienes Money Turned tiene un conocimiento adecuado a través de la verificación y que conllevan un riesgo relativamente bajo de lavado de dinero;
+				  (3) Usuarios que son revisados ​​y aprobados por los departamentos de control de riesgos y cumplimiento de la Money Turned
+				  
+				  Artículo 20 
+				  
+				  Identificación de Usuarios de Medio Riesgo. Usuarios de riesgo medio se refiere a Usuarios distintos a los especificados en los Artículos 18 y 19 de estas Reglas..
+				  
+				  Artículo 21 
+				  
+				  Ajuste de la Graduación del Nivel de Riesgo. Luego del establecimiento de relaciones comerciales con un Usuario, la Plataforma prestará atención sostenida a su identidad y estado de transacción. Si hubiera algún cambio o anormalidad en dicha identidad o estado, o si la MoneyTurned sospechara de la información que ya obtuvo sobre el Usuario, la Plataforma volverá a identificar la identidad del Usuario y ajustará la clasificación del nivel de riesgo del Usuario. Usuario de manera oportuna. Money Turned tiene la discreción de ajustar la clasificación del nivel de riesgo del Usuario y puede hacerlo sin proporcionar al Usuario ningún motivo.
+				  
+				  Artículo 22 
+				  
+				  Seguimiento de Usuarios de Alto Riesgo. Para los Usuarios en la categoría de alto riesgo, MoneyTurned realizará una revisión cada seis meses para actualizar la información básica sobre la identidad de los Usuarios y determinar sus fuentes de financiamiento, uso de fondos, situación financiera o estado comercial. Si la Plataforma, sobre la base de una evaluación integral durante la revisión periódica de un Usuario de alto riesgo, considera que el Usuario y las transacciones en la cuenta del Usuario con la Plataforma son normales, puede reducir el nivel de riesgo de dicho Usuario.
+				  
+				  Artículo 23 
+				  
+				  Identificación Continua del Usuario. A lo largo de la relación comercial con cada Usuario, Money Turned adoptará medidas continuas de verificación de la identidad del Usuario para seguir el estado de la transacción del Usuario, y si Money Turned encuentra que la información de identidad del Usuario o la información ha caducado y el Usuario no actualiza dicha información o datos en un plazo razonable sin alegar motivo justificable, Money Turned tomará medidas para suspender el servicio al Usuario.
+				  
+				  
+				  Artículo 24 
+				  
+				  Reidentificación de Usuarios. En cualquiera de las siguientes circunstancias, Money Turned tiene derecho a reidentificar la identidad de un Usuario:
+				  (1) cuando el Usuario solicite cambiar su nombre o denominación, el tipo de su(s) certificado(s) de identidad o documento(s) de identificación, número de cédula de identidad, capital social, ámbito de negocio o representante legal;
+				  (2) cuando exista alguna anormalidad en la conducta o negociación del Usuario;
+				  (3) cuando el nombre del Usuario es el mismo que el de cualquier sospechoso criminal, lavador de dinero o financiador del terrorismo;
+				  (4) cuando se sospeche que el Usuario participa en actividades de blanqueo de capitales o financiación del terrorismo;
+				  (5) cuando exista alguna inconsistencia o contradicción entre la información sobre el Usuario que la Plataforma adquiere y la información relevante que la Plataforma ya tiene en su poder;
+				  (6) existe alguna duda sobre la autenticidad, vigencia y/o integridad de la información y materiales del Usuario obtenidos previamente;
+				  (7) otras circunstancias en las que Money Turned considere necesario reidentificar la identidad del Usuario.
+				  
+				  Artículo 25
+				  
+				  Límites de Negociación. Money Turned tiene el derecho de fijar y ajustar en cualquier momento la cantidad máxima de divisas que podrá comprar para las transacciones programadas, de acuerdo con la seguridad de la transacción y las condiciones reales.
+				  
+				  Artículo 26 
+				  
+				  Identificación de Operaciones Sospechosas. Money Turned tiene derecho a verificar las siguientes transacciones sospechosas y cuentas sospechosas:
+				  (1) transferencia de entrada dispersa de activos digitales seguida de una transferencia de salida colectiva dentro de un período corto de tiempo, o transferencia de entrada colectiva seguida de una transferencia de salida dispersa dentro de un período corto de tiempo, lo cual es claramente inconsistente con la identidad del Usuario , situación financiera y/o estado de operación comercial;
+				  (2) cuando un usuario que ha estado inactiva durante mucho tiempo se reactiva repentinamente, o hay un flujo de entrada anormal repentino de activos digitales en una cuenta con cantidades generalmente pequeñas de flujo de activos digitales, y se retira una gran cantidad de moneda dentro de un corto período de tiempo;
+				  (3) cuando se abre o cancela una gran cantidad de cuentas sin ningún motivo justificable, y se deposita o retira una gran cantidad de dinero antes de dicha cancelación de cuentas;
+				  (4) hay algún depósito o retiro de suma global sospechoso en la cuenta de un Usuario que es una persona física;
+				  (5) cuando el Usuario participe en transacciones excesivamente frecuentes dentro de un cierto período de tiempo, lo que es gravemente inconsistente con la situación en el mercado de activos digitales; y
+				  (6) otras situaciones comerciales sospechosas identificadas por Money Turned
+				  
+				  Artículo 27 
+				  
+				  Identificación del Financiamiento del Terrorismo. Si la Plataforma sospecha que la transacción o el intento de transacción de un Usuario está relacionado con el terrorismo, el delito terrorista, cualquier organización terrorista, terrorista o personas involucradas en actividades de financiación del terrorismo, adoptará las medidas apropiadas, independientemente del monto del fondo o el valor de los activos involucrados.
+				  
+				  Artículo 28 
+				  
+				  Tratamiento de Conductas Sospechosas. Cuando Money Turned identifique la identidad de un Usuario, tendrá derecho a adoptar medidas tales como suspender cualquier transacción sospechosa, rechazar solicitudes de transacciones, revertir transacciones, congelar cuentas sospechosas e informar a las autoridades competentes si Money Turned descubre cualquiera de los siguientes realiza por parte del Usuario:
+				  (1) el Usuario se niega a proporcionar certificados de identidad válidos u otros documentos de identificación;
+				  (2) el Usuario se niegue a actualizar su perfil sin motivo justificable;
+				  (3) cuando, luego de la adopción de las medidas necesarias, Money Turned aún dude de la autenticidad, vigencia y/o integridad de la información de identidad del Usuario;
+				  (4) el Usuario falsifica o altera sus documentos de identificación para engañar a la Plataforma y permitirle abrir una cuenta en Money Turned
+				  (5) el Usuario se niega a proporcionar una explicación razonable de la conducta sospechosa del mismo, o la explicación del Usuario es obviamente injustificable.
+				  
+				  Artículo 29 
+				  
+				  Sistema de almacenamiento de Datos del Usuario. Money Turned establece un sistema para el almacenamiento de la información de identidad y los registros de transacciones de los Usuarios, y conserva adecuadamente los documentos y datos tales como la información de identidad de los Usuarios y los registros de transacciones para facilitar la investigación, supervisión y regulación del lavado de dinero, y evitar la pérdida, daño y divulgación de dicha información.
+				  
+				  
+				  Artículo 30
+				  
+				  Alcance del almacenamiento de los Datos de los Usuarios y Registros de Transacciones. La información de identidad del Usuario y los datos de transacciones guardados por Money Turned incluyen la información de identidad del Usuario tal como se proporciona, varios datos y registros que reflejan la identificación de la identidad del Usuario realizada por Money Turned, así como los datos y la información de cada transacción y otros datos que reflejan las circunstancias reales. de las transacciones
+				  
+				  Artículo 31 
+				  
+				  Plazo para el almacenamiento de la información de identidad del Usuario y Registros de Transacciones. La Plataforma mantendrá la información de identidad del Usuario y los registros de transacciones por términos específicos dependiendo de las siguientes circunstancias:
+				  (1) La información de identidad del Usuario se conservará durante al menos cinco años, a partir de la fecha en que finalice la relación comercial entre el Usuario y Money Turned;
+				  (2) los registros de transacciones deberán conservarse durante al menos cinco años, a partir de la fecha en que la transacción se inscriba en los registros;
+				  (3) si la información de identidad del Usuario y los registros de transacciones involucran cualquier actividad sospechosa que esté siendo investigada por lavado de dinero, y la investigación sobre lavado de dinero no se completa al vencimiento del plazo mínimo de almacenamiento como se especifica en el párrafo anterior, la Plataforma los conservará hasta el final de la investigación de lavado de dinero;
+				  
+				  Artículo 32 
+				  
+				  Asistencia a la Investigación Judicial. Si un órgano judicial, un órgano encargado de hacer cumplir la ley u otra autoridad competente de un país o región presenta una solicitud de asistencia a la Plataforma en relación con cualquier investigación, la Money Turned tendrá derecho a cooperar con dicha investigación y proporcionar información y materiales relevantes según sea necesario. solicitado por dicho órgano o autoridad, según el caso.
+				  
+				  Artículo 33 
+				  
+				  Confidencialidad en la Prevención del Blanqueo de Capitales. Cualquier miembro del personal de Money Turned que se encuentre con cualquier información relacionada con la lucha contra el lavado de dinero a través del desempeño de sus funciones relacionadas con el lavado de dinero o su trabajo deberá cumplir estrictamente con los requisitos de confidencialidad y mantener confidencial toda la información de identidad del Usuario, transacciones sospechosas, transacciones de financiamiento del terrorismo y otra información que pueda obtener. Dicho miembro del personal no puede proporcionar dicha información a ninguna organización, individuo o miembro del personal no relacionado con Money Turned.
+				  
+				  Artículo 34 
+				  
+				  Precauciones a los Usuarios. Los Usuarios deberán prestar atención a las siguientes precauciones:
+				  
+				  (1) los Usuarios tienen prohibido prestar sus datos de cuenta a cualquier otra persona;
+				  (2) los Usuarios tienen prohibido alquilar o prestar sus certificados de identidad;
+				  (3) los Usuarios tienen prohibido alquilar, prestar o divulgar información importante sobre activos personales, como los detalles de la cuenta y la contraseña del Usuario;
+				  (4) Los usuarios cooperarán activamente con Money Turned en la identificación del Usuario.
+				  
+				  
+				  
+				  Artículo 35 
+				  Reportes de Conductas Sospechosas. Los usuarios de la MoneyTurned pueden informar a la Plataforma si encuentran que alguna cuenta puede estar involucrada en actividades de lavado de dinero o financiamiento del terrorismo durante el comercio en la MoneyTurned.
+				  
+				  
+				  Artículo 36 Interpretación. Estas Reglas serán interpretadas por la MoneyTurned.
+				  
+				  Artículo 37 
+				  
+				  Fecha de Vigencia. El presente Reglamento entrará en vigor a partir 01 de febrero 2023
+			  </div>
+		  </div>
+	</div>
+</div>
+
+<div class="modal fade text-center notify-my termino-uso" id="terminos-uso" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog" style="width: 100%;height: 100%;max-width: inherit;margin: 0px!important;">
+		  <div class="modal-content" style="height: 100%; overflow: scroll;">
+			  <div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times;</button>
+			  </div>
+			  
+			  <div class="modal-body">
+				  <p class="" style="font-size:20px;">Términos de Uso de MoneyTurned</p>
+
+					**1. Introducción**
+					Bienvenido a MoneyTurned. Al acceder y utilizar nuestros servicios, acepta estos Términos de Uso. Si no está de acuerdo con alguno de los términos, absténgase de utilizar nuestros servicios.
+
+					**2. Definiciones**
+					- **Servicios**: Refiere a todas las funciones, plataformas y operaciones proporcionadas por MoneyTurned.
+					- **Usuario**: Cualquier individuo o entidad que acceda o utilice nuestros servicios.
+
+					**3. Descripción de los Servicios**
+					MoneyTurned ofrece una gama de servicios relacionados con criptoactivos, incluyendo, pero no limitado a, la compra, venta, transferencia y custodia.
+
+					**4. Elegibilidad y Registro**
+					- Debe ser mayor de edad y tener capacidad legal en su jurisdicción para utilizar nuestros servicios.
+					- El registro puede requerir información personal. Es esencial proporcionar datos precisos y mantener actualizada dicha información.
+
+					**5. Obligaciones del Usuario**
+					- Mantener la seguridad y confidencialidad de su cuenta y contraseña.
+					- No participar en actividades ilegales o prohibidas por estos términos.
+					- Reportar cualquier actividad sospechosa o no autorizada en su cuenta.
+
+					**6. Tarifas y Pagos**
+					- MoneyTurned puede establecer tarifas por el uso de determinados servicios.
+					- Las tarifas estarán claramente especificadas y pueden estar sujetas a cambios con previo aviso.
+
+					**7. Limitaciones y Prohibiciones**
+					- MoneyTurned se reserva el derecho de restringir, suspender o terminar el acceso a los servicios por cualquier motivo.
+					- Prohibimos el uso de bots, scraping o cualquier actividad automatizada sin nuestro consentimiento.
+
+					**8. Enmiendas a los Términos**
+					Podemos modificar estos Términos de Uso ocasionalmente. Si lo hacemos, le informaremos de cualquier cambio significativo y procuraremos obtener su consentimiento.
+
+					**9. Exclusión de Garantías y Limitación de Responsabilidad**
+					- Los servicios de MoneyTurned se ofrecen "tal cual" sin garantías de ningún tipo.
+					- No somos responsables por pérdidas o daños indirectos que surjan del uso o imposibilidad de uso de nuestros servicios.
+
+					**10. Leyes y Jurisdicción**
+					Estos términos se rigen por las leyes del Reino Unido. Cualquier disputa surgida será resuelta en tribunales competentes en el Reino Unido.
+
+					**11. Resolución de Disputas**
+					Antes de presentar una reclamación, le animamos a ponerse en contacto con nosotros para resolver cualquier disputa de manera amistosa. Si no se llega a un acuerdo, las disputas serán resueltas mediante arbitraje en el Reino Unido.
+
+					**12. Contacto**
+					Para dudas, comentarios o reportes, contáctenos en Info@moneyturned.com
+
+			  </div>
+		  </div>
+	</div>
+</div>
+
+<!--[if (!IE)|(gt IE 8)]><!-->
+  <script src="js/jquery-2.1.3.min.js"></script>
+<!--<![endif]-->
+
+<!--[if lte IE 8]>
+  <script src="js/jquery-1.9.1.min.js"></script>
+<![endif]-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.plugin.min.js"></script> 
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.min.js"></script>
+<script src="js/jquery.touchwipe.min.js"></script>
+<script src="js/included-plagins.js"></script>
+<script src="js/froogaloop2.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
-
