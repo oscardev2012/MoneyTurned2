@@ -1,1 +1,109 @@
-hola
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Próximamente</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Fondo dividido en dos colores de forma estilizada */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .container::before, .container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            z-index: -1;
+        }
+
+        .container::before {
+            left: 0;
+            background-color: #ffffff;
+            border-bottom-right-radius: 50%;
+        }
+
+        .container::after {
+            right: 0;
+            background-color: #8AE0B5;
+            border-bottom-left-radius: 50%;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Visby CF Family', sans-serif;
+            animation: scaleUp 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes scaleUp {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            color: #666;
+            margin-bottom: 20px;
+            font-family: 'Visby CF Family', sans-serif;
+        }
+
+        .countdown {
+            font-size: 2em;
+            color: #ff5733;
+            margin-bottom: 30px;
+        }
+
+        /* Estilos para la imagen en la esquina superior izquierda */
+        .corner-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Próximamente</h1>
+        <p>¡La revolución en servicios financieros te espera!</p>
+
+        <div class="countdown" id="countdown">
+ 
+        </div>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+        <img src="icono.png" alt="Imagen Ejemplo" class="corner-image"> <!-- Ruta de ejemplo para la imagen -->
+    </div>
+    
+    <script>
+        // Configura la fecha de lanzamiento (año, mes [0-11], día, hora, minuto, segundo)
+        const launchDate = new Date(2023, 0, 1, 12, 0, 0).getTime();
+    </script>
+</body>
+</html>
+
